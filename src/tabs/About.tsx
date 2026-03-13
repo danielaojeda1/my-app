@@ -33,7 +33,7 @@ const About = () => {
       <div className="career-section">
         <div className="career-box">
           <h2 className="career-title">Career progress</h2>
-          <Progress percentage="87"/>
+          <Progress percentage={87}/>
         </div>
       </div>
     </div>
