@@ -1,8 +1,8 @@
-
+import type { ReactNode } from "react"
 
 interface CardProps{
     title: string
-    text: string
+    text: ReactNode
 
 }
 const Card = ({title, text}: CardProps) => {
@@ -10,7 +10,7 @@ const Card = ({title, text}: CardProps) => {
     <div className="card">
     <div className="card-body">
         <h5 className="card-title">{title}</h5>
-        <p className="card-text">{text}</p>
+        <div className="card-text">{text}</div>
     </div>
     </div>
   )
